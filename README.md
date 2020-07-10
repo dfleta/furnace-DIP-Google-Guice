@@ -5,6 +5,8 @@ Ejemplo patrón DIP de SOLID
 
 Ejemplo del patrón Inversión de dependencias de SOLID del libro "_Agile Principles, Patterns and Practices in C#_" de Robert C. Martin y Micah Martin.
 
+Hemos extendido el kata para que Joda pueda calentar la habitación con el uso de la fuerza y hemos usado polimorfismo para que hable. 
+
 Vamos a terminar el kata "_furnace DIP example_" construyendo el módulo del
 programa que define, crea e inyecta las dependencias por nosotros.
 

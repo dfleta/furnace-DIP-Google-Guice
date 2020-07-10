@@ -14,16 +14,19 @@ public class FurnaceApp {
     	
     	final double minTemp = 15.0;
         final double maxTemp = 21.0;
-        // Movemos la creacion e inicializacion del objeto RoomTemperature al module del inyector
-        // RoomTemperature temperature = new RoomTemperature(15);
 
-        /*
+        /** 
+         * Movemos la creacion e inicializacion del objeto RoomTemperature
+         * al module del inyector:
+         * 
+         * RoomTemperature temperature = new RoomTemperature(15);
+         * 
          *  Guice.createInjector() takes your Modules, 
          *  and returns a new Injector instance.
          */
         Injector injector = Guice.createInjector(new RegulatorModule());
 		
-        /*
+        /**
          * Now that we've got the injector, we can build objects.
          * El codigo equivalente es:
          * Heater heater = new GasHeater();
@@ -33,11 +36,15 @@ public class FurnaceApp {
 		Regulador regulador = injector.getInstance(Regulador.class);
 		
 		regulador.setMinTemp(minTemp);
-		regulador.setMaxTemp(maxTemp);
-		// movemos la configuracion del objeto RoomTemperature al module del inyector
-		// mediante un metodo @Provides
-		// regulador.setTemperature(15);
-		
+        regulador.setMaxTemp(maxTemp);
+        
+        /**
+         * movemos la configuracion del objeto RoomTemperature
+         * al module del inyector mediante un metodo @Provides
+         * 
+         * regulador.setTemperature(15);
+         */
+
         System.out.println( "Arrancando..." );
         
 		regulador.regulate();        

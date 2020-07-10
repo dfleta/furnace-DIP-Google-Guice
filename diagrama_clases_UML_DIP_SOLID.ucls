@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+<class-diagram version="1.2.4" icons="true" automaticImage="JPEG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
+  router="FAN">  
   <class id="1" language="java" name="org.foobarspam.furnaceDIGuice.consumer.Regulador" project="DIGuice" 
     file="/DIGuice/src/main/java/org/foobarspam/furnaceDIGuice/consumer/Regulador.java" binary="false" 
     corner="BOTTOM_RIGHT">    
@@ -73,7 +74,7 @@
   <class id="8" language="java" name="org.foobarspam.furnaceDIGuice.services.GasHeater" project="DIGuice" 
     file="/DIGuice/src/main/java/org/foobarspam/furnaceDIGuice/services/GasHeater.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="715" y="898"/>    
+    <position height="-1" width="-1" x="710" y="917"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -82,7 +83,7 @@
   </class>  
   <class id="9" language="java" name="org.foobarspam.furnaceDIGuice.services.Jedi" project="DIGuice" 
     file="/DIGuice/src/main/java/org/foobarspam/furnaceDIGuice/services/Jedi.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1008" y="926"/>    
+    <position height="-1" width="-1" x="1008" y="943"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      

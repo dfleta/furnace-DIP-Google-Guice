@@ -5,12 +5,16 @@ public class RoomTemperature {
 	
 	private double temperature = 0;
 	
-	/*
-	public RoomTemperature(double temperature){
-		this.temperature = temperature;
-	}*/
-	// necesito un constructor sin argumentos para realizar inyeccion de dependencias
+	/**
+	 * Substituimos el constructor por la automatización de Guice:
+	 * Inyecta la dependencia en el constructor de la clase.
+	 * 
+	 * public RoomTemperature(double temperature){
+	 *		this.temperature = temperature;
+	 * } 
+	 */
 	public RoomTemperature() {
+		// Necesito un constructor sin argumentos para realizar inyeccion de dependencias
 	}	
 
 	public double getTemperature() {

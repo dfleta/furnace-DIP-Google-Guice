@@ -9,10 +9,11 @@ import static java.lang.annotation.ElementType.METHOD;
 
 import com.google.inject.BindingAnnotation;
 
-/* 
+/**
  * Necesito esta interfaz para crear la BindingAnnotation
  * que me permita seleccionar que implementacion del servicio
  * quiero utilizar.
+ * 
  * Explicacion @Target y @Retention:
  * https://github.com/google/guice/wiki/BindingAnnotations
  */

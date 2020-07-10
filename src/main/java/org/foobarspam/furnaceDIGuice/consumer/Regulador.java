@@ -21,8 +21,8 @@ public class Regulador implements Regulator {
 	
 	@Inject
 	public Regulador(Thermometer thermometer, @Force Heater heater){
-		// con la BindingAnnotation @Force selecciono la implementacion Jedi
-		// del servicio, aunque me obliga a crear una interfaz mas
+		// Con la BindingAnnotation @Force selecciono la implementacion Jedi
+		// del servicio, aunque me obligue a crear una interfaz mas
 		this.heater = heater;
 		this.thermometer = thermometer;		
 	}
@@ -39,11 +39,11 @@ public class Regulador implements Regulator {
 		this.temperature.setTemperature(temperature);
 	}
 
-	/* setter injection
-	 * con esta inyeccion eliminamos argumentos en 
+	/** 
+	 * setter injection
+	 * Con esta inyeccion eliminamos argumentos en 
 	 * el metodo message en la interfaz Regulator
 	 */
-
 	@Inject
 	public void setRoomTemperature(RoomTemperature temperature) {
 		this.temperature = temperature;
@@ -53,13 +53,16 @@ public class Regulador implements Regulator {
 		return this.heater;
 	}
 
-	// setter injection
-	/* @Inject
-	public void setService(Heater heater, Thermometer thermometer) {
-		this.heater = heater;
-		this.thermometer = thermometer;
-	}*/
-	
+	/**
+	 * setter injection
+	 * 
+	 * @Inject
+	 * public void setService(Heater heater, Thermometer thermometer) {
+	 * 		this.heater = heater;
+	 * 		this.thermometer = thermometer;
+	 * }
+	 */
+
 	public void regulate() {
 		while (thermometer.read(temperature) < maxTemp) {
 			code = RegulatorDisplayCodes.HEATING;

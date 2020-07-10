@@ -23,20 +23,22 @@ public class RegulatorModule extends AbstractModule {
 		bind(Thermometer.class).to(RemoteCommandSensor.class);
 		
 	
-		/* 
-		 * dependencia a una clase concreta
+		/** 
+		 * Dependencia a una clase concreta:
 		 * You can bind a type to a specific instance of that type. 
 		 * This is usually only useful only for objects that 
-		 * don't have dependencies of their own, such as value objects.	
+		 * don't have dependencies of their own, such as value objects.
+		 * 
+		 * 
+		 * 		bind(RoomTemperature.class);
+		 * 
 		 * 
 		 * Otra manera de hacerlo: con @Provides:
 		 * construir un objeto concreto manualmente 
 		 */
-
-		// bind(RoomTemperature.class);
 	}
 	
-	/*
+	/** 
 	 * When you need code to create an object, use an @Provides method. 
 	 * The method must be defined within a module, and it must have an @Provides annotation. 
 	 * The method's return type is the bound type. 
